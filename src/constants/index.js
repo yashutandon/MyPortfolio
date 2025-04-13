@@ -4,16 +4,16 @@ const navLinks = [
     link: "#work",
   },
   {
-    name: "Experience",
-    link: "#experience",
+    name: "Coding Profiles",
+    link: "#coding-profiles",
   },
   {
     name: "Skills",
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Growth Journey",
+    link: "#growth-journey",
   },
 ];
 
@@ -38,55 +38,61 @@ const counterItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    
+    imgPath: "/images/logos/java.png",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/images/logos/javascript.png",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/images/logos/react.png",
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: "/images/logos/tailwindcss.png",
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: "/images/logos/nodejs.png",
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    imgPath: "/images/logos/expressjs.png",
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    imgPath: "/images/logos/typescript.png",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    imgPath: "/images/logos/nextjs.png",
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    imgPath: "/images/logos/chatgpt.png",
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    imgPath: "/images/logos/firebase.png",
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    imgPath: "/images/logos/cpp.png",
   },
 ];
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    imgPath: "/images/webdev.png",
+    title: "Full-Stack Web Developer",
+    desc: "Proficient in building scalable, responsive web apps using MERN stack, Next.js, and modern UI libraries.",
   },
   {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    imgPath: "/images/logos/chatgpt.png",
+    title: "AI Integration & APIs",
+    desc: "Experienced in integrating AI models like GPT & Gemini via APIs (OpenAI, Vapi etc.) for real-world apps.",
   },
   {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    imgPath: "/images/problemskills.png",
+    title: "Problem Solving & DSA",
+    desc: "Strong grasp of Data Structures and Algorithms with regular practice on LeetCode, GFG, and Codeforces.",
+  },
+  {
+    imgPath: "/images/communication.png",
+    title: "Communication Skills",
+    desc: "Capable of explaining complex tech concepts in a simple way, ensuring smooth collaboration, clear documentation, and effective teamwork.",
   },
 ];
 
@@ -115,13 +121,13 @@ const techStackImgs = [
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "Frontend Developer",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
+    name: "Software Developer",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
@@ -248,18 +254,22 @@ const testimonials = [
 const socialImgs = [
   {
     name: "insta",
+    url:"https://www.instagram.com/yashu_tandon?igsh=emR3eHVxaWttcHJ1",
     imgPath: "/images/insta.png",
   },
   {
     name: "fb",
+    url:"https://www.facebook.com/yashu.tandon.10/",
     imgPath: "/images/fb.png",
   },
   {
     name: "x",
+    url:"",
     imgPath: "/images/x.png",
   },
   {
     name: "linkedin",
+    url:"https://www.linkedin.com/in/yashu-tandon-279038260/",
     imgPath: "/images/linkedin.png",
   },
 ];
