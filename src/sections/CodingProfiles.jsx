@@ -6,7 +6,7 @@ const CodingProfiles = () => {
     {
       platform: "LeetCode",
       username: "yashu_tandon",
-      stats: "400+ problems solved",
+      stats: "500+ problems solved",
       rank: "Top 5% globally",
       logo: "/images/leetcode.png"
     }, 
@@ -20,8 +20,8 @@ const CodingProfiles = () => {
     {
       platform: " GFG",
       username: "yashutajvke",
-      stats: "350+ problems solved",
-      rank: "Institute Rank: 308",
+      stats: "450+ problems solved",
+      rank: "Institute Rank: 186",
       logo: "/images/gfg.svg" // Replace with your actual image path
     },
     {
@@ -49,12 +49,12 @@ const CodingProfiles = () => {
           <div className="grid-4-cols mt-10">
             {profiles.map((profile, index) => (
               <div key={index} className="card-border rounded-xl p-6 relative card">
-                <div className="flex-col-center gap-5">
-                  <div className="timeline-logo">
+                <div className="flex-col-center mt-3 gap-5">
+                  <div className="timeline-logo ">
                     <img 
                       src={profile.logo} 
                       alt={`${profile.platform} logo`} 
-                      className="size-6 md:size-8"
+                      className="size-6 md:size-8 "
                     />
                   </div>
                   
@@ -72,9 +72,9 @@ const CodingProfiles = () => {
                     rel="noopener noreferrer" 
                     className="mt-4 cta-wrapper group"
                   >
-                    <div className="cta-button">
+                    <div className="cta-button  w-[260px]">
                       <div className="bg-circle"></div>
-                      <p className="text">Visit Profile</p>
+                      <p className="text ">Visit Profile</p>
                       
                       <div className="arrow-wrapper">
                         <img src="/images/arrow-down.svg" alt="Arrow" className="size-5" />

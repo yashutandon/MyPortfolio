@@ -51,13 +51,13 @@ const ShowcaseSection = () => {
                 {/* Leftside section */}
                 <div className='first-project-wrapper' ref={project}>
                     <div className='image-wrapper'>
-                        <img src="/images/project.png" alt="MockPrepAi" />
+                        <img src="/images/1.png" alt="Codely" />
                     </div>
                     <div className="text-content">
                         <h2>
-                        AI-powered mock interview platform with real-time feedback and analysis.
+                       AI-powered real-time code platform.
                         </h2>
-                        <p className='text-white-50 md:text-xl' >An app built with Next.js, TypeScript, Tailwind CSS, Framer Motion, OpenAI (GPT-3.5 + Gemini), Firebase (Auth + Firestore), Vapi, Zod. </p>
+                        <p className='text-white-50 md:text-xl' >Codely is a Lovable-inspired AI-powered coding platform that allows users to write prompts and get real-time code generation, execution, and debugging inside secure, Docker-based cloud sandboxes. Built with Next.js 15, Tailwind CSS v4, tRPC, and integrated with Clerk, OpenAI, Inngest, and Prisma ORM, Codely delivers a seamless developer experience directly in the browser without any local setup.</p>
                     </div>
                 </div>
                 {/* Rightside section */}
@@ -65,18 +65,18 @@ const ShowcaseSection = () => {
                     <div className='project' ref={project2}>
                         <div>
                            <div className='image-wrapper bg-[#ffefdb]'>
-                           <img src="/images/project2.png" alt="MockPrepAi" />
+                           <img src="/images/2.png" alt="Sarthi.ai" />
                            </div>
-                           <h2>Library Management Platform</h2>
+                           <h2> AI-Powered Smart Video Meeting Assistant </h2>
                         </div>
                     </div>
                     
                     <div className='project' ref={project3}>
                         <div>
                            <div className='image-wrapper bg-[#ffe7eb]'>
-                           <img src="/images/project3.png" alt="YC Directory" />
+                           <img src="/images/3.png" alt="ClarityDocs" />
                            </div>
-                           <h2>YC Directory - A Startup Showcase App</h2>
+                           <h2>ClarityDocs - Your PDF Summary Assistant</h2>
                         </div>
                     </div>
                 </div>
