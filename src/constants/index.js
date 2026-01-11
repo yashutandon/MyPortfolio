@@ -1,20 +1,22 @@
 const navLinks = [
   {
-    name: "Work",
+    name: "Work Experince",
+    link: "#experience",
+  },
+  {
+    name: "Projects",
     link: "#work",
   },
   {
-    name: "Coding Profiles",
+    name: "Coding-Profiles",
     link: "#coding-profiles",
   },
   {
     name: "Skills",
     link: "#skills",
   },
-  {
-    name: "Growth Journey",
-    link: "#growth-journey",
-  },
+ 
+ 
 ];
 
 const words = [
@@ -29,11 +31,11 @@ const words = [
 ];
 
 
-const counterItems = [
-  { value: 3, suffix: "+", label: "Years of Learning Experience" },
-  { value: 8, suffix: "+", label: "Mini Projects Completed" },
-  { value: 7, suffix: "+", label: "Languages Learned (C++, JS, etc.)" },
-  { value: 400, suffix: "+", label: "Coding Problems Solved on Coding Platforms" },
+ const counterItems = [
+  { value: 1, suffix: "+", label: "Years of Professional Experience" },
+  { value: 5, suffix: "+", label: "Production-Grade Projects Built" },
+  { value: 4, suffix: "+", label: "Programming Languages (C++, Python, JS, TS)" },
+  { value: 500, suffix: "+", label: "DSA Problems Solved (LeetCode, CodeChef, GFG)" },
 ];
 
 const logoIconsList = [
@@ -72,29 +74,29 @@ const logoIconsList = [
     imgPath: "/images/logos/cpp.png",
   },
 ];
-
-const abilities = [
+ const abilities = [
   {
     imgPath: "/images/webdev.png",
-    title: "Full-Stack Web Developer",
-    desc: "Proficient in building scalable, responsive web apps using MERN stack, Next.js, and modern UI libraries.",
+    title: "Full-Stack Web Development",
+    desc: "Build production-grade SaaS apps using Next.js, TypeScript, Node.js, PostgreSQL, Prisma, and Tailwind with secure auth, dashboards, and scalable APIs.",
   },
   {
-    imgPath: "/images/logos/chatgpt.png",
-    title: "AI Integration & APIs",
-    desc: "Experienced in integrating AI models like GPT & Gemini via APIs (OpenAI, Vapi etc.) for real-world apps.",
+    imgPath: "https://chatgpt.com/favicon.ico",
+    title: "AI Integration & Automation",
+    desc: "Integrate OpenAI agents, AI chat, transcripts, summaries, and background workers using Inngest, Vapi, and event-driven pipelines for real-time apps.",
   },
   {
     imgPath: "/images/problemskills.png",
-    title: "Problem Solving & DSA",
-    desc: "Strong grasp of Data Structures and Algorithms with regular practice on LeetCode, GFG, and Codeforces.",
+    title: "DSA & Competitive Programming",
+    desc: "Solved 500+ problems with strong command over arrays, trees, graphs, DP, and problem-solving under contest constraints.",
   },
   {
-    imgPath: "/images/communication.png",
-    title: "Communication Skills",
-    desc: "Capable of explaining complex tech concepts in a simple way, ensuring smooth collaboration, clear documentation, and effective teamwork.",
+    imgPath: "https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png",
+    title: "DevOps & Cloud Deployment",
+    desc: "Deploy Dockerized services on AWS (EC2, S3, SES, CloudWatch) with CI-ready setups and performance optimizations using SSR and code-splitting.",
   },
 ];
+
 
 const techStackImgs = [
   {
@@ -102,7 +104,7 @@ const techStackImgs = [
     imgPath: "/images/logos/react.png",
   },
   {
-    name: "Python Developer",
+    name: "Gen Ai Developer",
     imgPath: "/images/logos/python.svg",
   },
   {
@@ -114,7 +116,7 @@ const techStackImgs = [
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "Project Manager",
+    name: "Full Stack Developer",
     imgPath: "/images/logos/git.svg",
   },
 ];
@@ -127,7 +129,7 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Software Developer",
+    name: "Gen Ai Developer",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
@@ -145,51 +147,36 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Full Stack Developer",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
 ];
 
-const expCards = [
+ const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "Full Stack Developer Intern — CatalystCare",
+    date: "Oct 2025 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Worked on production-grade mental wellness SaaS using Next.js, TypeScript, Node.js, PostgreSQL, and Prisma with secure role-based dashboards.",
+      "Designed and deployed scalable REST APIs with JWT authentication, RBAC, and secure file upload pipelines.",
+      "Optimized Prisma queries and database indexing, reducing critical API response times by 25% on high-traffic endpoints.",
+      "Deployed Dockerized services on AWS (EC2, S3, SES, CloudWatch) and improved Lighthouse scores by 20% using SSR and code-splitting.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Web Developer Intern — Campalin Innovations",
+    date: "June 2024 - July 2024",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
-  },
-  {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Developed company website using React, Redux, and Tailwind CSS, improving user engagement by ~30%.",
+      "Integrated REST APIs with frontend in collaboration with backend team, reducing delivery time by ~20%.",
+      "Refactored reusable components to reduce UI bugs and improve code maintainability.",
+      "Implemented design and usability improvements based on cross-functional team feedback.",
     ],
   },
 ];
+
 
 const expLogos = [
   {
@@ -206,50 +193,7 @@ const expLogos = [
   },
 ];
 
-const testimonials = [
-  {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
-    review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
-  },
-  {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
-    review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
-  },
-  {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
-    review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
-  },
-  {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
-    review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
-  },
-  {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
-  },
-  {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
-  },
-];
+
 
 const socialImgs = [
   {
@@ -264,7 +208,7 @@ const socialImgs = [
   },
   {
     name: "x",
-    url:"",
+    url:"https://x.com/Yashu84868099",
     imgPath: "/images/x.png",
   },
   {
@@ -281,7 +225,6 @@ export {
   counterItems,
   expCards,
   expLogos,
-  testimonials,
   socialImgs, 
   techStackIcons,
   techStackImgs,

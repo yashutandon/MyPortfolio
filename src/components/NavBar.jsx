@@ -1,44 +1,64 @@
-import React, { useEffect, useState } from 'react'
-import { navLinks } from '../constants'
+import React, { useEffect, useState } from "react";
+import { navLinks } from "../constants";
 
 const NavBar = () => {
-     const [srcolled, setSrcolled] = useState(false);
+    const [srcolled, setSrcolled] = useState(false);
 
-     useEffect(()=>{
-        const handleScroll = () =>{
-            const isScrolled = window.scrollY > 0;
-            setSrcolled(true);
-        }
-        window.addEventListener('scroll', handleScroll);
+    useEffect(() => {
+        const handleScroll = () => {
+            setSrcolled(window.scrollY > 10);
+        };
 
-        return () => window.removeEventListener('scroll',handleScroll)
-     },[])
-  return (
-    <header className={`navbar ${srcolled ? "scrolled":"not-scrolled"}` }>
-        <div className='inner'>
-            <a className='logo' href="#hero">
-                Yashu | Tandon
-            </a>
-            <nav className='desktop'>
-                <ul>
-                    {navLinks.map(({link,name})=>(
-                        <li key={name} className='group'>
-                            <a href={link}>
-                                <span>{name}</span>
-                                <span className='underline'/>
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-             </nav>
-                <a href="#contact" className='contact-btn group'>
-                    <div className='inner'>
-                        <span>Contact Me</span>
-                    </div>
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    return (
+        <header className={`navbar ${srcolled ? "scrolled" : "not-scrolled"}`}>
+            <div className="inner">
+                <a className="logo" href="#hero">
+                    Yashu | Tandon
                 </a>
-        </div>
-    </header>
-  )
-}
 
-export default NavBar
+                <nav className="desktop">
+                    <ul>
+                        {navLinks.map(({ link, name, external }) => (
+                            <li key={name} className="group">
+                                <a
+                                    href={link}
+                                    target={external ? "_blank" : "_self"}
+                                    rel={external ? "noopener noreferrer" : undefined}
+                                >
+                                    <span>{name}</span>
+                                    <span className="underline" />
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+
+                {/* Resume + Contact Buttons */}
+                <div className="flex gap-4">
+                    <a
+                        href="https://drive.google.com/file/d/1vRKO8ereHZ24_g19P0k0v6iL0Lv9J1gA/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="contact-btn group"
+                    >
+                        <div className="inner px-3 py-1.5 md:px-5 md:py-2">
+                            <span className="text-sm md:text-base">View Resume</span>
+                        </div>
+                    </a>
+
+                    <a href="#contact" className="contact-btn group">
+                        <div className="inner px-3 py-1.5 md:px-5 md:py-2">
+                            <span className="text-sm md:text-base">Contact</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+    );
+};
+
+export default NavBar;

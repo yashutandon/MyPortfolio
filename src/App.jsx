@@ -9,18 +9,20 @@ import CodingProfiles from './sections/CodingProfiles'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 import Growth from './sections/Growth'
+import ExperienceSection from './sections/ExperienceCard'
 
 const App = () => {
   return (
 <>
     <NavBar/>
     <Hero/>
+    <ExperienceSection/>
     <ShowcaseSection/>
     <CodingProfiles/>
     <LogoSection/>
     <FeatureCard/>
     <TechStack/>
-    <Growth/>
+    {/* <Growth/> */}
     <Contact/>
     <Footer/>
 </>
