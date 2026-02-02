@@ -40,7 +40,7 @@ const NavBar = () => {
                 {/* Resume + Contact Buttons */}
                 <div className="flex gap-4">
                     <a
-                        href="https://drive.google.com/file/d/1qUIv6Esqwc2wvHXKKUMABk0-TLtPtbrM/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1N7GE8hSH_aslRZNKlCRgz5Jtb2XfA8Lg/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="contact-btn group"
